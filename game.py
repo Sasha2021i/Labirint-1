@@ -5,9 +5,11 @@ from load_level import all_sprites
 from go import go_dawn, go_up, go_left, go_right
 from start_screen import start_screen, screen
 from end_screen import end_screen
+from generation_map import generation_map
 
 FPS = 50
 x, y = -5, -5
+generation_map()
 load_level('map.txt', x, y, 'none')
 
 

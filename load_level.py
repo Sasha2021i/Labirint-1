@@ -2,10 +2,12 @@ import pygame
 from load_image import load_image
 
 all_sprites = pygame.sprite.Group()
+image = load_image("mario.png")
+image = pygame.transform.scale(image, (40, 50))
 tile_images = {
     'wall': load_image('box.png'),
     'empty': load_image('grass.png'),
-    'mario': load_image('mario.png')
+    'mario': image
 }
 
 

@@ -11,8 +11,8 @@ def generation_map():
                          ['#'], ['#'], ['#']])
     list_map[1][1] = ['.']
     list_map[13][13] = ['@']
-    list_map[13][12] = ['.']
-    list_map[12][13] = ['.']
+    m, n = choice([(13, 12), (12, 13)])
+    list_map[m][n] = ['.']
     x = 1
     y = 1
     running = True
